@@ -1,0 +1,66 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #e0eaf0; /* Pastel blue background color */
+}
+
+.form-container {
+    background-color: #fff; /* White background for the form */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+form {
+    text-align: left;
+}
+
+h2 {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+.radio-group label {
+    display: inline;
+}
+
+button.register-button {
+    background-color: #333; /* Black background color */
+    color: #fff; /* White text color */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.register-button:hover {
+    background-color: #555; /* Darker color on hover */
+}

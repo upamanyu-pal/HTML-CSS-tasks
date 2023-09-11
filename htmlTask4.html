@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 4</title>
+    <script>
+        function togglePasswordVisibility() {
+            var passwordField = document.getElementById("pwd");
+            var rePasswordField = document.getElementById("repwd");
+            var showPasswordCheckbox = document.getElementById("showPassword");
+
+            if (showPasswordCheckbox.checked) {
+                passwordField.type = "text";
+                rePasswordField.type = "text";
+            } else {
+                passwordField.type = "password";
+                rePasswordField.type = "password";
+            }
+        }
+    </script>
+    <style>
+        table{
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        td{
+            padding: 10px;
+        }
+
+        label{
+            display: inline-block;
+            width: 100px;
+            text-align: left;
+
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <form>
+        <table>
+            <tr>
+                <td>
+                    <label for="fn">Full Name:</label>
+                    <input type="text" name="fn" placeholder="Enter your full name">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="un">Username:</label>
+                    <input type="text" name="un"placeholder="Enter your username">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="pwd">Password:</label>
+                    <input type="password" name="pwd" id="pwd" placeholder="Enter your password">
+
+                    <input type="checkbox" id="showPassword" onclick="togglePasswordVisibility()">
+                    <label for="showPassword">Show password</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="repwd">Re Password:</label>
+                    <input type="password" name="repwd" id="repwd" placeholder="Re-enter your password">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="ad">Address:</label>
+                    <textarea id="ad" name="ad"></textarea>
+                    
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="age">Date of Birth:</label>
+                    <input type="datetime-local" id="Test_DatetimeLocal">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Gender:</label>
+                    <!--id = gives each radio button a unique identifier-->
+                    <!--name = classiffication/grouping. 
+                    You can select only ONE entry at a time , in the
+                    same group. Hence useful for radio buttons
+                    giving only a single choice; not multi choice.-->
+                    <!--value = value associated with specific radio button.
+                    Value will be sent on form submission-->
+
+                    <input type="radio" id="male" name="gender" value="Male">
+                    <label for="male">Male</label>
+
+                    <input type="radio" id="female" name="gender" value="Female">
+                    <label for="female">Female</label>
+
+                    <input type="radio" id="transgender" name="gender" value="Transgender">
+                    <label for="transgender">Transgender</label>
+                    
+                    <input type="radio" id="nb" name="gender" value="Non-binary">
+                    <label for="nb">Non-binary</label>                   
+
+                </td>
+            </tr>
+
+        </table>
+
+        <button type="submit" form="nameform" value="Submit">Submit</button>
+
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,50 @@
+h2{
+    text-align: center;
+}
+
+
+.verticalMenu{
+    margin: 0 auto; /* Add this line to center the menu horizontally */
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    overflow-y: auto;
+}
+
+.verticalMenu a{
+    background-color: peachpuff;
+    color: rgb(243, 129, 123);
+    font-size: large;
+    font-weight: bold;
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+}
+
+.verticalMenu a:hover{
+    background-color: rgb(212, 15, 117);
+}
+
+.verticalMenu a.listHeading{
+    background-color: rgb(224, 63, 63) ;
+    color: antiquewhite;
+}
+
+.horizontalMenu{
+    margin: 0 auto;
+    background: #000;
+    overflow: auto;
+    white-space:nowrap;
+}
+
+.horizontalMenu a{
+    display:inline-block;
+    color:azure;
+    text-align: left;
+    padding: 15px;
+    text-decoration: none;
+}
+
+.horizontalMenu a:hover{
+    background-color: crimson;
+}

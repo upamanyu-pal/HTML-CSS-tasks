@@ -1,0 +1,72 @@
+
+
+
+/* Shared styles for all .rect classes */
+.rect, .rect1, .rect2, .rect3, .rect4, .rect5, .rect6, .rect7, .rect8 {
+    height: 60px;
+    width: 120px;
+    display: inline-block;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 15px;
+    margin: 10px; /* Add spacing around each rectangle */
+}
+
+/* Specific styles for each .rect class (no changes in styling) */
+.rect {
+    border-color: greenyellow;
+    border-width: 4px;
+    border-radius: 5px;
+}
+
+.rect1 {
+    border-style: groove;
+    border-color: rgb(47, 134, 255);
+    border-width: 10px;
+    border-radius: 0px 0px 30px 30px;
+}
+
+.rect2 {
+    border-style: double;
+    border-color: teal;
+    border-width: 5px;
+    border-radius: 25px;
+}
+
+.rect3 {
+    border-style: dotted;
+    border-color: cyan;
+    border-width: 4px;
+    border-radius: 15px;
+}
+
+.rect4 {
+    border-style: dashed;
+    border-color: purple;
+    border-radius: 35%;
+    border-width: 6px;
+}
+
+.rect5 {
+    border-color: red;
+    border-radius: 33px;
+}
+
+.rect6 {
+    border-style: double;
+    border-width: 5px;
+    border-color: rgba(170, 255, 0, 0.689);
+    border-radius: 50%;
+}
+
+.rect7 {
+    border-style: groove;
+    border-width: 5px;
+    border-color: rgb(78, 27, 3);
+    border-radius: 30%;
+}
+
+.rect8 {
+    border-color: tan;
+    border-radius: 0px 30px 0px 30px;
+}
